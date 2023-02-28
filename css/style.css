@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+li {
+  list-style: none;
+  margin-left: 1rem; }
+
+li:hover {
+  transition: color .5s;
+  color: hotpink; }
+
+.plus {
+  background-color: hotpink;
+  clip-path: polygon(0 36%, 35% 35%, 35% 0%, 65% 0%, 65% 35%, 100% 35%, 100% 63%, 64% 65%, 65% 100%, 35% 100%, 35% 64%, 0 64%); }
+
+nav {
+  box-shadow: 0 4px 8px 0 rgba(214, 19, 204, 0.2), 0 6px 20px 0 rgba(79, 2, 82, 0.19); }
+
+footer {
+  box-shadow: 5px 10px 10px 10px; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/js/script.js">
+</head>
+
+<body class="bg-gray-900">
+    <header class="bg-gray-900">
+        <nav class="z-10 w-full fixed top-0 right-0 bg-gray-900">
+            <div class="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
+                <div class="flex flex-wrap items-center justify-between py-2 gap-6 md:py-4 md:gap-0 relative bg-gray-900">
+                    <input aria-hidden="true" type="checkbox" name="toggle_nav" id="toggle_nav" class="hidden peer">
+                    <div class="relative z-20 w-full flex justify-between lg:w-max md:px-0">
+                        <a href="#" aria-label="logo" class="flex space-x-2 items-center">
+                            <span class="text-2xl font-bold text-gray-900 dark:text-fuchsia-600 ">Hospital</span>
+                        </a>
+
+                        <div class="relative flex items-center lg:hidden max-h-10">
+                            <label role="button" for="toggle_nav" aria-label="humburger" id="hamburger"
+                                class="relative  p-6 -mr-6">
+                                <div aria-hidden="true" id="line"
+                                    class="m-auto h-0.5 w-5 rounded bg-sky-900 dark:bg-gray-300 transition duration-300">
+                                </div>
+                                <div aria-hidden="true" id="line2"
+                                    class="m-auto mt-1 h-0.5 w-5 rounded bg-sky-900 dark:bg-gray-300 transition duration-300">
+                                </div>
+                                <div aria-hidden="true" id="line2"
+                                    class="m-auto mt-1 h-0.5 w-5 rounded bg-sky-900 dark:bg-gray-300 transition duration-300">
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <div aria-hidden="true"
+                        class="fixed z-10 inset-0 h-screen w-screen bg-white/70 backdrop-blur-2xl origin-bottom scale-y-0 transition duration-500 peer-checked:origin-top peer-checked:scale-y-100 lg:hidden dark:bg-gray-900/70">
+                    </div>
+                    <div class="flex-col z-20 flex-wrap gap-6 p-8 rounded-3xl border border-gray-100 bg-white shadow-2xl shadow-gray-600/10 justify-end w-full invisible opacity-0 translate-y-1  absolute top-full left-0 transition-all duration-300 scale-95 origin-top 
+                            lg:relative lg:scale-100 lg:peer-checked:translate-y-0 lg:translate-y-0 lg:flex lg:flex-row lg:items-center lg:gap-0 lg:p-0 lg:bg-transparent lg:w-7/12 lg:visible lg:opacity-100 lg:border-none
+                            peer-checked:scale-100 peer-checked:opacity-100 peer-checked:visible lg:shadow-none 
+                            dark:shadow-none dark:bg-gray-800 dark:border-gray-700">
+
+                        <div class="text-gray-600 dark:text-gray-300 lg:pr-4 lg:w-auto w-full lg:pt-0">
+                            <ul class="tracking-wide font-medium lg:text-sm flex-col flex lg:flex-row gap-6 lg:gap-0">
+                                <li class="">
+                                    <a href="http://127.0.0.1:5502/labs.html"
+                                        class="block md:px-4 transition hover:text-primary ">
+                                        <span class="">LABS</span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="http://127.0.0.1:5502/tests.html"
+                                        class="block md:px-4 transition hover:text-primary ">
+                                        <span class="">TESTS</span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="http://127.0.0.1:5502/facilities.html"
+                                        class="block md:px-4 transition hover:text-primary ">
+                                        <span class="">FACILITIES</span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="http://127.0.0.1:5502/form.html"
+                                        class="block md:px-4 transition hover:text-primary">
+                                        <span class="">FORM</span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="#" class="block md:px-4 transition hover:text-primary">
+                                        <span class="">24*7 HELPLINE</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="space-y-40 mb-40">
+        <div class="relative" id="intro">
+            <div aria-hidden="true" class="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20">
+                <div class="blur-[106px] h-56 bg-gradient-to-br from-primary to-purple-400 dark:from-blue-700"></div>
+                <div class="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-sky-300 dark:to-indigo-600"></div>
+            </div>
+            <div class="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
+                <div class="relative pt-36 ml-auto">
+                    <div class="lg:w-2/3 text-center mx-auto">
+                        <h1 class="text-gray-900 dark:text-white font-bold text-5xl md:text-6xl xl:text-7xl">Shaping a
+                            world with <span class="text-primary dark:text-fuchsia-600">healthy things.</span></h1>
+                        <p class="mt-8 text-gray-700 dark:text-gray-300">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Odio incidunt nam itaque sed eius modi error totam sit illum. Voluptas
+                            doloribus asperiores quaerat aperiam. Quidem harum omnis beatae ipsum soluta!</p>
+                        <div class="mt-16 flex flex-wrap justify-center gap-y-4 gap-x-6">
+                            <a href="#"
+                                class="relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max">
+                                <span class="relative text-base font-semibold text-white">Get started</span>
+                            </a>
+                            <a href="#"
+                                class="relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:border before:border-transparent before:bg-primary/10 before:bg-gradient-to-b before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800 sm:w-max">
+                                <span class="relative text-base font-semibold text-primary dark:text-white">Learn
+                                    more</span>
+                            </a>
+                        </div>
+                        <div
+                            class="px-4 py-8 mt-16 border-y border-gray-100 dark:border-gray-800 sm:flex justify-between">
+                            <div class="text-center">
+                                <h6 class="text-lg font-semibold text-gray-700 dark:text-white">The lowest TEST price
+                                </h6>
+                                <p class="mt-2 text-gray-500">Some text here</p>
+                            </div>
+                            <div class="text-center">
+                                <h6 class="text-lg font-semibold text-gray-700 dark:text-white">The best facilities</h6>
+                                <p class="mt-2 text-gray-500">Some text here</p>
+                            </div>
+                            <div class="text-center">
+                                <h6 class="text-lg font-semibold text-gray-700 dark:text-white">The most loved</h6>
+                                <p class="mt-2 text-gray-500">Some text here</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-12 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6">
+                        <div class="p-4 grayscale transition duration-200 hover:grayscale-0">
+                            <img src="./images/clients/microsoft.svg" class="h-12 w-auto mx-auto" loading="lazy"
+                                alt="client logo" width="" height="">
+                        </div>
+                        <div class="p-4 grayscale transition duration-200 hover:grayscale-0">
+                            <img src="./images/clients/airbnb.svg" class="h-12 w-auto mx-auto" loading="lazy"
+                                alt="client logo" width="" height="">
+                        </div>
+                        <div class="p-4 flex grayscale transition duration-200 hover:grayscale-0">
+                            <img src="./images/clients/google.svg" class="h-9 w-auto m-auto" loading="lazy"
+                                alt="client logo" width="" height="">
+                        </div>
+                        <div class="p-4 grayscale transition duration-200 hover:grayscale-0">
+                            <img src="./images/clients/ge.svg" class="h-12 w-auto mx-auto" loading="lazy"
+                                alt="client logo" width="" height="">
+                        </div>
+                        <div class="p-4 flex grayscale transition duration-200 hover:grayscale-0">
+                            <img src="./images/clients/netflix.svg" class="h-8 w-auto m-auto" loading="lazy"
+                                alt="client logo" width="" height="">
+                        </div>
+                        <div class="p-4 grayscale transition duration-200 hover:grayscale-0">
+                            <img src="./images/clients/google-cloud.svg" class="h-12 w-auto mx-auto" loading="lazy"
+                                alt="client logo" width="" height="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="features">
+            <div class="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
+                <div class="md:w-2/3 lg:w-1/2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                        class="w-6 h-6 text-fuchsia-600">
+                        <path fill-rule="evenodd"
+                            d="M9 4.5a.75.75 0 01.721.544l.813 2.846a3.75 3.75 0 002.576 2.576l2.846.813a.75.75 0 010 1.442l-2.846.813a3.75 3.75 0 00-2.576 2.576l-.813 2.846a.75.75 0 01-1.442 0l-.813-2.846a3.75 3.75 0 00-2.576-2.576l-2.846-.813a.75.75 0 010-1.442l2.846-.813A3.75 3.75 0 007.466 7.89l.813-2.846A.75.75 0 019 4.5zM18 1.5a.75.75 0 01.728.568l.258 1.036c.236.94.97 1.674 1.91 1.91l1.036.258a.75.75 0 010 1.456l-1.036.258c-.94.236-1.674.97-1.91 1.91l-.258 1.036a.75.75 0 01-1.456 0l-.258-1.036a2.625 2.625 0 00-1.91-1.91l-1.036-.258a.75.75 0 010-1.456l1.036-.258a2.625 2.625 0 001.91-1.91l.258-1.036A.75.75 0 0118 1.5zM16.5 15a.75.75 0 01.712.513l.394 1.183c.15.447.5.799.948.948l1.183.395a.75.75 0 010 1.422l-1.183.395c-.447.15-.799.5-.948.948l-.395 1.183a.75.75 0 01-1.422 0l-.395-1.183a1.5 1.5 0 00-.948-.948l-1.183-.395a.75.75 0 010-1.422l1.183-.395c.447-.15.799-.5.948-.948l.395-1.183A.75.75 0 0116.5 15z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+
+                    <h2 class="my-8 text-2xl font-bold text-gray-700 dark:text-white md:text-4xl">
+                        The latest technology leads to better experience
+                    </h2>
+                    <p class="text-gray-600 dark:text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Natus ad ipsum pariatur autem, fugit laborum in atque amet obcaecati? Nisi minima aspernatur,
+                        quidem nulla cupiditate nam consequatur eligendi magni adipisci.</p>
+                </div>
+                <div
+                    class="mt-16 grid divide-x divide-y divide-gray-100 dark:divide-gray-700 overflow-hidden rounded-3xl border border-gray-100 text-gray-600 dark:border-gray-700 sm:grid-cols-2 lg:grid-cols-4 lg:divide-y-0 xl:grid-cols-4">
+                    <div
+                        class="group relative bg-white dark:bg-gray-800 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
+                        <div class="relative space-y-8 py-12 p-8">
+                            <img src="img/virus-4931227_640.jpg" class="w-auto" width="512" height="512"
+                                alt="burger illustration">
+
+                            <div class="space-y-2">
+                                <h5
+                                    class="text-xl font-semibold text-gray-700 dark:text-white transition group-hover:text-secondary">
+                                    Best Doctors
+                                </h5>
+                                <p class="text-gray-600 dark:text-gray-300">
+                                    Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.
+                                </p>
+                            </div>
+                            <a href="http://127.0.0.1:5502/doctors.html"
+                                class="flex items-center justify-between group-hover:text-secondary">
+                                <span class="text-sm  text-fuchsia-600">Read more</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="w-5 h-5 -translate-x-4  text-fuchsia-600 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100">
+                                    <path fill-rule="evenodd"
+                                        d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div
+                        class="group relative bg-white dark:bg-gray-800 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
+                        <div class="relative space-y-8 py-12 p-8">
+                            <img src="img/nurse-748186_640.jpg" class="w-auto" width="512" height="512"
+                                alt="burger illustration">
+
+                            <div class="space-y-2">
+                                <h5
+                                    class="text-xl font-semibold text-gray-700 dark:text-white transition group-hover:text-secondary">
+                                    Best Staff
+                                </h5>
+                                <p class="text-gray-600 dark:text-gray-300">
+                                    Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.
+                                </p>
+                            </div>
+                            <a href="http://127.0.0.1:5502/staffs.html"
+                                class="flex items-center justify-between group-hover:text-secondary">
+                                <span class="text-sm text-fuchsia-600">Read more</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="w-5 h-5 -translate-x-4  text-fuchsia-600 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100">
+                                    <path fill-rule="evenodd"
+                                        d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div
+                        class="group relative bg-white dark:bg-gray-800 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
+                        <div class="relative space-y-8 py-12 p-8">
+                            <img src="img/hospital-ward-1338585_640.jpg" class="w-auto" width="512" height="512"
+                                alt="burger illustration">
+
+                            <div class="space-y-2">
+                                <h5
+                                    class="text-xl font-semibold text-gray-700 dark:text-white transition group-hover:text-secondary">
+                                    Best Facilities
+                                </h5>
+                                <p class="text-gray-600 dark:text-gray-300">
+                                    Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.
+                                </p>
+                            </div>
+                            <a href="#" class="flex items-center justify-between group-hover:text-secondary">
+                                <span class="text-sm text-fuchsia-600">Read more</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="w-5 h-5 -translate-x-4 text-fuchsia-600 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100">
+                                    <path fill-rule="evenodd"
+                                        d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div
+                        class="group relative bg-gray-50 dark:bg-gray-900 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
+                        <div
+                            class="relative space-y-8 py-12 p-8 transition duration-300 group-hover:bg-white dark:group-hover:bg-gray-800">
+                            <img src="img/doctor-5710152_640.jpg" class="w-full object-cover" width="512" height="512"
+                                alt="burger illustration">
+
+                            <div class="space-y-2">
+                                <h5
+                                    class="text-xl font-semibold text-gray-700 dark:text-white transition group-hover:text-secondary">
+                                    Special Arrivals
+                                </h5>
+                                <p class="text-gray-600 dark:text-gray-300">
+                                    Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.
+                                </p>
+                            </div>
+                            <a href="http://127.0.0.1:5502/special-doctors.html"
+                                class="flex items-center justify-between group-hover:text-secondary">
+                                <span class="text-sm text-fuchsia-600">Read more</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="w-5 h-5 -translate-x-4 text-2xl text-fuchsia-600 opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100">
+                                    <path fill-rule="evenodd"
+                                        d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="about-hospital">
+            <div class="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                    class="w-6 h-6 text-sky-500">
+                    <path fill-rule="evenodd"
+                        d="M2.25 13.5a8.25 8.25 0 018.25-8.25.75.75 0 01.75.75v6.75H18a.75.75 0 01.75.75 8.25 8.25 0 01-16.5 0z"
+                        clip-rule="evenodd"></path>
+                    <path fill-rule="evenodd"
+                        d="M12.75 3a.75.75 0 01.75-.75 8.25 8.25 0 018.25 8.25.75.75 0 01-.75.75h-7.5a.75.75 0 01-.75-.75V3z"
+                        clip-rule="evenodd"></path>
+                </svg>
+                <div
+                    class="space-y-6 justify-between text-gray-600 md:flex flex-row-reverse md:gap-6 md:space-y-0 lg:gap-12 lg:items-center">
+                    <div class="md:5/12 lg:w-1/2 h-full">
+                        <img src="img/istockphoto-962112270-612x612.jpg" alt="image" loading="lazy" width="" height=""
+                            class="w-full">
+                    </div>
+                    <div class="md:7/12 lg:w-1/2">
+                        <h2 class="text-3xl font-bold text-gray-900 md:text-4xl dark:text-white">
+                            The all in one hospital and <span class="text-fuchsia-600">24*7</span> services available.
+                        </h2>
+                        <p class="my-8 text-gray-600 dark:text-gray-300">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum minima fugiat autem
+                            cupiditate, in iste aliquam temporibus eligendi perferendis itaque. <br> <br>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum ullam, autem sed laudantium
+                            maiores quod blanditiis voluptatum eum molestiae dolore, in earum, facilis aliquid ex!
+                        </p>
+                        <div class="divide-y space-y-4 divide-gray-100 dark:divide-gray-800">
+                            <div class="mt-8 flex gap-4 md:items-center">
+                                <div class="w-12 h-12 flex gap-4 rounded-full bg-indigo-100 dark:bg-indigo-900/20">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                        class="w-6 h-6 m-auto text-indigo-500 dark:text-indigo-400">
+                                        <path fill-rule="evenodd"
+                                            d="M4.848 2.771A49.144 49.144 0 0112 2.25c2.43 0 4.817.178 7.152.52 1.978.292 3.348 2.024 3.348 3.97v6.02c0 1.946-1.37 3.678-3.348 3.97a48.901 48.901 0 01-3.476.383.39.39 0 00-.297.17l-2.755 4.133a.75.75 0 01-1.248 0l-2.755-4.133a.39.39 0 00-.297-.17 48.9 48.9 0 01-3.476-.384c-1.978-.29-3.348-2.024-3.348-3.97V6.741c0-1.946 1.37-3.68 3.348-3.97zM6.75 8.25a.75.75 0 01.75-.75h9a.75.75 0 010 1.5h-9a.75.75 0 01-.75-.75zm.75 2.25a.75.75 0 000 1.5H12a.75.75 0 000-1.5H7.5z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </div>
+                                <div class="w-5/6">
+                                    <h3 class="font-semibold text-lg text-gray-700 dark:text-indigo-300">Chat Anytime
+                                    </h3>
+                                    <p class="text-gray-500 dark:text-gray-400">Asperiores nemo possimus nesciunt quam
+                                        mollitia.</p>
+                                </div>
+                            </div>
+                            <div class="pt-4 flex gap-4 md:items-center"><a
+                                    href="https://goo.gl/maps/HK9iqSyoXXxsdJwh8">
+                                    <div class="w-12 h-12 flex gap-4 rounded-full bg-teal-100 dark:bg-teal-900/20">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="w-6 h-6 m-auto text-teal-600 dark:text-teal-400">
+                                            <path fill-rule="evenodd"
+                                                d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="w-5/6"><a href="https://goo.gl/maps/HK9iqSyoXXxsdJwh8" target="_blank">
+                                            <h3 class="font-semibold text-lg text-gray-700 dark:text-teal-300">Real Time
+                                                Location</h3>
+                                            <p class="text-gray-500 dark:text-gray-400"><a
+                                                    href="https://goo.gl/maps/HK9iqSyoXXxsdJwh8">click for location</a>
+                                            </p>
+                                        </a>
+                                    </div>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="reviews text-gray-600 dark:text-gray-300" id="testimonials">
+            <div class="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
+                <div class="mb-20 space-y-4 px-6 md:px-0">
+                    <h2 class="text-center text-2xl font-bold text-gray-800 dark:text-white md:text-4xl">
+                        We have some <span class="text-fuchsia-600">fans.</span>
+                    </h2>
+                </div>
+                <div class="md:columns-2 lg:columns-3 gap-8 space-y-8">
+                    <div
+                        class="aspect-auto p-8 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
+                        <div class="flex gap-4">
+                            <img class="w-12 h-12 rounded-full" src="img/nurse-748186_640.jpg" alt="user avatar"
+                                width="400" height="400" loading="lazy">
+                            <div>
+                                <h6 class="text-lg font-medium text-gray-700 dark:text-white">Full Name</h6>
+                                <p class="text-sm text-gray-500 dark:text-gray-300">Proffesion</p>
+                            </div>
+                        </div>
+                        <p class="mt-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum aliquid quo eum
+                            quae quos illo earum ipsa doloribus nostrum minus libero aspernatur laborum cum, a suscipit,
+                            ratione ea totam ullam! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto
+                            laboriosam deleniti aperiam ab veniam sint non cumque quis tempore cupiditate. Sint libero
+                            voluptas veniam at reprehenderit, veritatis harum et rerum.</p>
+                    </div>
+                    <div
+                        class="aspect-auto p-8 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
+                        <div class="flex gap-4">
+                            <img class="w-12 h-12 rounded-full" src="img/virus-4931227_640.jpg" alt="user avatar"
+                                width="200" height="200" loading="lazy">
+                            <div>
+                                <h6 class="text-lg font-medium text-gray-700 dark:text-white">Full Name</h6>
+                                <p class="text-sm text-gray-500 dark:text-gray-300">Profession</p>
+                            </div>
+                        </div>
+                        <p class="mt-8"> Lorem ipsum dolor laboriosam deleniti aperiam ab veniam sint non cumque quis
+                            tempore cupiditate. Sint libero voluptas veniam at reprehenderit, veritatis harum et rerum.
+                        </p>
+                    </div>
+                    <div
+                        class="aspect-auto p-8 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
+                        <div class="flex gap-4">
+                            <img class="w-12 h-12 rounded-full" src="img/nurse-748186_640.jpg" alt="user avatar"
+                                width="200" height="200" loading="lazy">
+                            <div>
+                                <h6 class="text-lg font-medium text-gray-700 dark:text-white">Full Name</h6>
+                                <p class="text-sm text-gray-500 dark:text-gray-300">Proffesion</p>
+                            </div>
+                        </div>
+                        <p class="mt-8">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto laboriosam
+                            deleniti aperiam ab veniam sint non cumque quis tempore cupiditate. Sint libero voluptas
+                            veniam at reprehenderit, veritatis harum et rerum.</p>
+                    </div>
+                    <div
+                        class="aspect-auto p-8 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
+                        <div class="flex gap-4">
+                            <img class="w-12 h-12 rounded-full" src="img/virus-4931227_640.jpg" alt="user avatar"
+                                width="200" height="200" loading="lazy">
+                            <div>
+                                <h6 class="text-lg font-medium text-gray-700 dark:text-white">Full Name</h6>
+                                <p class="text-sm text-gray-500 dark:text-gray-300">Proffesion</p>
+                            </div>
+                        </div>
+                        <p class="mt-8">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto laboriosam
+                            deleniti aperiam ab veniam sint non cumque quis tempore cupiditate. Sint libero voluptas
+                            veniam at reprehenderit, veritatis harum et rerum.</p>
+                    </div>
+                    <div
+                        class="aspect-auto p-8 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
+                        <div class="flex gap-4">
+                            <img class="w-12 h-12 rounded-full" src="img/nurse-748186_640.jpg" alt="user avatar"
+                                width="200" height="200" loading="lazy">
+                            <div>
+                                <h6 class="text-lg font-medium text-gray-700 dark:text-white">Full Name</h6>
+                                <p class="text-sm text-gray-500 dark:text-gray-300">Proffesion</p>
+                            </div>
+                        </div>
+                        <p class="mt-8"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto laboriosam
+                            deleniti aperiam ab veniam sint non cumque quis tempore cupiditate. Sint libero voluptas
+                            veniam at reprehenderit, veritatis harum et rerum.</p>
+                    </div>
+                    <div
+                        class="aspect-auto p-8 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
+                        <div class="flex gap-4">
+                            <img class="w-12 h-12 rounded-full" src="img/virus-4931227_640.jpg" alt="user avatar"
+                                width="400" height="400" loading="lazy">
+                            <div>
+                                <h6 class="text-lg font-medium text-gray-700 dark:text-white">Full Name</h6>
+                                <p class="text-sm text-gray-500 dark:text-gray-300">Proffesion</p>
+                            </div>
+                        </div>
+                        <p class="mt-8">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto laboriosam
+                            deleniti aperiam ab veniam sint non cumque quis tempore cupiditate. Sint libero voluptas
+                            veniam at reprehenderit, veritatis harum et rerum.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="get-employed relative py-16">
+            <div aria-hidden="true"
+                class="absolute inset-0 h-max w-full m-auto grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20">
+                <div class="blur-[106px] h-56 bg-gradient-to-br from-primary to-purple-400 dark:from-blue-700"></div>
+                <div class="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-sky-300 dark:to-indigo-600"></div>
+            </div>
+            <div class="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
+                <div class="relative">
+                    <div class="flex items-center justify-center -space-x-2">
+                        <img loading="lazy" width="400" height="400" src="img/nurse-748186_640.jpg" alt="member photo"
+                            class="h-8 w-8 rounded-full object-cover">
+                        <img loading="lazy" width="200" height="200" src="img/virus-4931227_640.jpg" alt="member photo"
+                            class="h-12 w-12 rounded-full object-cover">
+                        <img loading="lazy" width="200" height="200" src="img/guardian-angel-2704181_640.jpg"
+                            alt="member photo" class="z-10 h-16 w-16 rounded-full object-cover">
+                        <img loading="lazy" width="200" height="200" src="img/virus-4931227_640.jpg" alt="member photo"
+                            class="relative h-12 w-12 rounded-full object-cover">
+                        <img loading="lazy" width="200" height="200" src="img/nurse-748186_640.jpg" alt="member photo"
+                            class="h-8 w-8 rounded-full object-cover">
+                    </div>
+                    <div class="mt-6 m-auto space-y-6 md:w-8/12 lg:w-7/12">
+                        <h1 class="text-center text-4xl font-bold text-gray-800 dark:text-white md:text-5xl">Vacancies
+                            Available
+                            Apply now</h1>
+                        <p class="text-center text-xl text-gray-600 dark:text-gray-300">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. A eos similique minima ipsam illo
+                            blanditiis.
+                        </p>
+                        <div class="flex flex-wrap justify-center gap-6">
+                            <a href="http://127.0.0.1:5502/jobs.html"
+                                class="relative flex h-12 w-full items-center justify-center px-8 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max">
+                                <span class="relative text-base font-semibold text-white dark:text-dark">Apply Now
+                                </span>
+                            </a>
+                            <a href="#"
+                                class="relative flex h-12 w-full items-center justify-center px-8 before:absolute before:inset-0 before:rounded-full before:border before:border-transparent before:bg-primary/10 before:bg-gradient-to-b before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800 sm:w-max">
+                                <span class="relative text-base font-semibold text-primary dark:text-white">
+                                    See Eligibility</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="dos-donts">
+            <div class="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
+                <div class="mb-12 space-y-2 text-center">
+                    <h2 class="text-3xl font-bold text-gray-800 md:text-4xl dark:text-white">Stay Healthy</h2>
+                    <p class="lg:mx-auto lg:w-6/12 text-gray-600 dark:text-gray-300">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad beatae asperiores obcaecati quos
+                        aperiam, omnis laudantium? Possimus fugit quibusdam iste.
+                    </p>
+                </div>
+                <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                    <div
+                        class="group p-6 sm:p-8 rounded-3xl bg-white border border-gray-100 dark:shadow-none dark:border-gray-700 dark:bg-gray-800 bg-opacity-50 shadow-2xl shadow-gray-600/10">
+                        <div class="relative overflow-hidden rounded-xl">
+                            <img src="img/vegetables-1085063_640.jpg" alt="art cover" loading="lazy" width="1000"
+                                height="667"
+                                class="h-64 w-full object-cover object-top transition duration-500 group-hover:scale-105">
+                        </div>
+                        <div class="mt-6 relative">
+                            <h3 class="text-2xl font-semibold text-gray-800 dark:text-white">
+                                Have green and natural vegetables and fruits.
+                            </h3>
+                            <p class="mt-6 mb-8 text-gray-600 dark:text-gray-300">
+                                Voluptates harum aliquam totam, doloribus eum impedit atque! Temporibus...
+                            </p>
+                            <a class="inline-block" href="#">
+                                <span class="text-info dark:text-blue-300">Read more</span>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div
+                        class="group p-6 sm:p-8 rounded-3xl bg-white border border-gray-100 dark:shadow-none dark:border-gray-700 dark:bg-gray-800 bg-opacity-50 shadow-2xl shadow-gray-600/10">
+                        <div class="relative overflow-hidden rounded-xl">
+                            <img src="img/stop-4036139_640.jpg" alt="art cover" loading="lazy" width="1000" height="667"
+                                class="h-64 w-full object-cover object-top transition duration-500 group-hover:scale-105">
+                        </div>
+                        <div class="mt-6 relative">
+                            <h3 class="text-2xl font-semibold text-gray-800 dark:text-white">
+                                Quit smoking now and show care for your beloved.
+                            </h3>
+                            <p class="mt-6 mb-8 text-gray-600 dark:text-gray-300">
+                                Voluptates harum aliquam totam, doloribus eum impedit atque! Temporibus...
+                            </p>
+                            <a class="inline-block" href="#">
+                                <span class="text-info dark:text-blue-300">Read more</span>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div
+                        class="group p-6 sm:p-8 rounded-3xl bg-white border border-gray-100 dark:shadow-none dark:border-gray-700 dark:bg-gray-800 bg-opacity-50 shadow-2xl shadow-gray-600/10">
+                        <div class="relative overflow-hidden rounded-xl">
+                            <img src="img/man-2604149_640.jpg" alt="art cover" loading="lazy" width="1000" height="667"
+                                class="h-64 w-full object-cover object-top transition duration-500 group-hover:scale-105">
+                        </div>
+                        <div class="mt-6 relative">
+                            <h3 class="text-2xl font-semibold text-gray-800 dark:text-white">
+                                A daily morning exercise will helps to stay fit.
+                            </h3>
+                            <p class="mt-6 mb-8 text-gray-600 dark:text-gray-300">
+                                Voluptates harum aliquam totam, doloribus eum impedit atque! Temporibus...
+                            </p>
+                            <a class="inline-block" href="#">
+                                <span class="text-info dark:text-blue-300">Read more</span>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-gradient-to-b from-transparent to-gray-100 py-12 dark:to-gray-900">
+        <div class="mx-auto max-w-6xl px-6 md:px-12 lg:px-6 xl:px-0">
+            <a href="#home" aria-label="logo" class="flex items-center justify-center space-x-2">
+                <div aria-hidden="true" class="flex flex-col space-y-0.5">
+                    
+                    <div class="plus mx-auto h-5 w-5 rounded-full bg-primary"></div>
+                </div>
+                <span class="text-2xl font-bold text-gray-900 dark:text-white">Hospital</span>
+            </a>
+            <ul role="list"
+                class="mt-12 flex flex-wrap items-center justify-center gap-4 py-4 text-gray-600 dark:text-gray-400 sm:gap-8">
+                <li role="listitem">
+                    <a href="#home" class="duration-300 hover:text-primary dark:hover:text-white">
+                        Home
+                    </a>
+                </li>
+                <li role="listitem">
+                    <a href="#features" class="duration-300 hover:text-primary dark:hover:text-white">
+                        Features
+                    </a>
+                </li>
+                <li role="listitem">
+                    <a href="#solution" class="duration-300 hover:text-primary dark:hover:text-white">
+                        Solution
+                    </a>
+                </li>
+                <li role="listitem">
+                    <a href="#reviews" class="duration-300 hover:text-primary dark:hover:text-white">
+                        Reviews
+                    </a>
+                </li>
+                <li role="listitem">
+                    <a href="#pricing" class="duration-300 hover:text-primary dark:hover:text-white">
+                        Pricing
+                    </a>
+                </li>
+            </ul>
+            <div class="m-auto mt-4 flex w-max items-center justify-between space-x-4 text-gray-500">
+                <a class="duration-300 hover:text-gray-600 dark:hover:text-white" href="https://twitter.com/@tailus_ui"
+                    title="twitter" target="blank" aria-label="twitter">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="m-auto h-5 w-5"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z">
+                        </path>
+                    </svg>
+                </a>
+                <a class="duration-300 hover:text-gray-600 dark:hover:text-white" href="#" title="facebook"
+                    target="blank" aria-label="facebook">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="m-auto w-5" viewBox="0 0 16 16">
+                        <path
+                            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z">
+                        </path>
+                    </svg>
+                </a>
+                <a class="duration-300 hover:text-gray-600 dark:hover:text-white" href="#" title="linkedin"
+                    target="blank" aria-label="linkedin">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="m-auto w-5" viewBox="0 0 16 16">
+                        <path
+                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z">
+                        </path>
+                    </svg>
+                </a>
+            </div>
+            <div class="mt-12 text-center">
+                <span class="text-sm tracking-wide text-gray-500">all copyright reserved 2023 - Present | All rights
+                    reserved</span>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
+</body>
+
+</html>
